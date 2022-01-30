@@ -1,0 +1,25 @@
+var express=require("express");
+
+app=express();
+
+app.get("/",function (req,res) {
+    res.send("this is home page");
+})
+
+app.post("/about",function (req,res) {
+    res.send("this is about");
+})
+
+app.put("/contact",function (req,res) {
+    res.send("this is contact");
+})
+
+app.delete("/trams",function (req,res) {
+    res.send("this is trams");
+})
+
+
+
+app.listen("8000",function (error) {
+    console.log("sarver run start")
+})
